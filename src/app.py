@@ -1,6 +1,22 @@
 import streamlit as st
-
 import io, sys, os
+import captum
+
+import spacy
+
+import torch
+import torchtext
+import torchtext.data
+
+import torch.nn as nn
+import torch.nn.functional as F
+
+from torchtext.vocab import Vocab
+
+from captum.attr import LayerIntegratedGradients, TokenReferenceBase, visualization
+
+nlp = spacy.load('en')
+
 
 # Page configuration
 st.set_page_config(
@@ -8,3 +24,5 @@ st.set_page_config(
     page_icon="🔍",
     layout="wide"
 )
+# Footer
+st.markdown("---\nPowered by Streamlit")
