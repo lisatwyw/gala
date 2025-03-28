@@ -5,13 +5,13 @@ import captum
 import spacy
 
 import torch
-import torchtext
-import torchtext.data
 
 import torch.nn as nn
 import torch.nn.functional as F
 
-from torchtext.vocab import Vocab
+# import torchtext
+# import torchtext.data
+# from torchtext.vocab import Vocab
 
 from captum.attr import LayerIntegratedGradients, TokenReferenceBase, visualization
 
